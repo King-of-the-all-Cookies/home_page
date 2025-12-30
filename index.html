@@ -4,34 +4,57 @@
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
 <style type="text/css">
 <!--
+/* Добавляем фон и делаем его фиксированным */
+html {
+    background: url('./images/lain.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
 body {
-	margin-top: 0px;
-	margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: transparent; /* Делаем body прозрачным */
+    min-height: 100%;
 }
+
 body,td,th {
-	color: #000000;
+    color: #000000;
 }
+
 a:link {
-	color: #000066;
-	text-decoration: none;
+    color: #000066;
+    text-decoration: none;
 }
+
 a:visited {
-	color: #666666;
-	text-decoration: none;
+    color: #666666;
+    text-decoration: none;
 }
+
 a:hover {
-	color: #0000CC;
-	text-decoration: none;
+    color: #0000CC;
+    text-decoration: none;
 }
+
 a:active {
-	color: #000066;
-	text-decoration: none;
+    color: #000066;
+    text-decoration: none;
+}
+
+/* Основной контейнер с прокруткой */
+.content-wrapper {
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 -->
 </style></HEAD>
-<BODY BGCOLOR="#000000">
+<BODY>
 <!-- ImageReady Slices (psd.psd) -->
 
+<div class="content-wrapper">
 <TABLE WIDTH=600 height="100%" BORDER=0 align="center" CELLPADDING=0 CELLSPACING=0>
 	<TR>
 		<TD COLSPAN=8 WIDTH=600 HEIGHT=188>
@@ -81,6 +104,7 @@ a:active {
 			<IMG SRC="images/spacer.gif" WIDTH=76 HEIGHT=1 ALT=""></TD>
 	</TR>
 </TABLE>
+</div>
 <!-- End ImageReady Slices -->
 
 <map name="Map"><area shape="rect" coords="75,136,428,187" href="#"></map>
