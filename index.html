@@ -4,7 +4,7 @@
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
 <style type="text/css">
 <!--
-/* Добавляем фон и делаем его фиксированным */
+/* Фон */
 html {
     background: url('./images/lain.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -16,29 +16,38 @@ body {
     margin-bottom: 0px;
     background: transparent; /* Делаем body прозрачным */
     min-height: 100%;
+    color: #FFFFFF; /* БЕЛЫЙ цвет для всего текста в body */
 }
 
-body,td,th {
-    color: #000000;
+/* Белый цвет таблиц */
+table, td, th {
+    color: #FFFFFF !important;
 }
 
+/* Белый цвет внутри ячеек */
+td, th {
+    color: #FFFFFF !important;
+}
+
+/* Ссылки */
 a:link {
-    color: #000066;
+    color: #0000FF; /* СИНИЙ */
     text-decoration: none;
 }
 
 a:visited {
-    color: #666666;
+    color: #551A8B; /* Темно-фиолетовый для посещенных */
     text-decoration: none;
 }
 
 a:hover {
-    color: #0000CC;
+    color: #FFFFFF; /* Белый при наведении */
     text-decoration: none;
+    background-color: rgba(0,0,255,0.3); /* Синяя подложка при наведении */
 }
 
 a:active {
-    color: #000066;
+    color: #0000FF; /* СИНИЙ */
     text-decoration: none;
 }
 
@@ -49,10 +58,47 @@ a:active {
     position: relative;
     z-index: 1;
 }
+
+/* Для жирного текста */
+strong {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    color: #FFFFFF;
+}
+
+/* Стиль для параграфов */
+p {
+    color: #FFFFFF;
+}
+
+/* Специально для текста в таблице */
+td p, td strong {
+    color: #FFFFFF !important;
+}
+
+/* Тестовые стили */
+.test-list {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.test-list li {
+    margin: 8px 0;
+}
+
+/* Блок с кодом */
+.code-block {
+    background-color: rgba(0, 0, 0, 0.7); /* Темная подложка для кода */
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 3px solid #0000FF;
+    font-family: monospace;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
 -->
 </style></HEAD>
 <BODY>
-<!-- ImageReady Slices (psd.psd) -->
 
 <div class="content-wrapper">
 <TABLE WIDTH=600 height="100%" BORDER=0 align="center" CELLPADDING=0 CELLSPACING=0>
@@ -75,16 +121,28 @@ a:active {
 			<IMG SRC="images/gits_07.jpg" WIDTH=76 HEIGHT=58 ALT=""></TD>
 	</TR>
 	<TR>
-		<TD WIDTH=600 HEIGHT=63 COLSPAN=8 align="center" valign="bottom" background="images/gits_08.jpg"><strong>Заголовок 1</strong> </TD>
+		<TD WIDTH=600 HEIGHT=63 COLSPAN=8 align="center" valign="bottom" background="images/gits_08.jpg"><strong>Домашнаяя страница</strong> </TD>
 	</TR>
 	<TR>
 		<TD COLSPAN=2 background="images/gits_09.gif" WIDTH=99 height="100%">&nbsp;</TD>
-		<TD WIDTH=403 height="100%" COLSPAN=4 valign="top" background="images/gits_10.gif"><p><strong>Тута второй<br>
-		</strong>А тута текст какой я ахуенный</p>
-	    <p><strong>Ещё что-то</strong><br>
-	    И в заключение</p></TD>
+		<TD WIDTH=403 height="100%" COLSPAN=4 valign="top" background="images/gits_10.gif">
+		
+		<!-- Вот тут текст начинается -->
+		<center><h2>Привет!</h2></center>
+		
+		<p>Меня зовут <strong>Царь Всея Печенья</strong> и это моя домашняя страница! Здесь ты можешь прочитать кто я вообще такой, потыкаться по кнопкам, полюбоваться на фон и в целом просто окунуться в олд веб.</p>
+		
+		<h2>Кто я?</h2>
+		
+		<p>А собственно говоря кто я? Ну, на самом деле меня зовут Роман, это я в интернетах такой Царь. Занимаюсь я взломами всяких игр и консолей. Люблю коллекционировать всякие вещи (в основном старую технику, но фигурки я тоже люблю). Ещё я актёр озвучки на пенсии) Сейчас владею своим бюро переводов и собственно перевожу игры со своей командой. Ещё могу сказать про себя что я типо сис. админ и программист. Держу свои сервера, собираю на них музыку и прочий хлам. А, да и собственно вот сейчас пытаюсь научится в веб. <em>Не бейте меня за дизайн. Во первых он был сделан в пейнте, а во вторых я люблю y2k, хаха.</em> Да в целом мне особо больше нечего сказать.</p>
+		
+		<h2>Мои друзьяшки</h2>
+		<p>!UNDER CONSTRUCTION!<br>А если серьёзно, то я чуть позже сюда всех добавлю, подождите пожалуйста :3</p>
+		
+		<!-- А вот тут он заканчивается -->
 		<TD COLSPAN=2 background="images/gits_11.gif" WIDTH=98 HEIGHT="100%">&nbsp;</TD>
 	</TR>
+
 	<TR>
 		<TD>
 			<IMG SRC="images/spacer.gif" WIDTH=75 HEIGHT=1 ALT=""></TD>
@@ -103,12 +161,10 @@ a:active {
 		<TD>
 			<IMG SRC="images/spacer.gif" WIDTH=76 HEIGHT=1 ALT=""></TD>
 	</TR>
+
 </TABLE>
 </div>
-<!-- End ImageReady Slices -->
 
-<map name="Map"><area shape="rect" coords="75,136,428,187" href="#"></map>
-<div style="font-size: 0.8em; text-align: center; margin-top: 1.0em; margin-bottom: 1.0em;">
-</div>
+
 </body>
 </HTML>
