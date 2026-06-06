@@ -1,3 +1,3 @@
 # My home web-page
 
-# Hosted in filldor.w10.site
+# Hosted in kotac.ru (in Russia)
